@@ -31,8 +31,7 @@ const App = () => {
               </Link>
               <Link to="/sign/:user">
               {newvalue === "signedin" ?<AmplifySignOut id="logout"/> : <div id="login"></div>}
-            </Link>
-              
+            </Link> 
           </ul>
         </nav>
       </header>
