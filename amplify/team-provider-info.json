@@ -1,0 +1,20 @@
+{
+  "prod": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-tree-prod-202259-authRole",
+      "UnauthRoleArn": "arn:aws:iam::462898676500:role/amplify-tree-prod-202259-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::462898676500:role/amplify-tree-prod-202259-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-tree-prod-202259-deployment",
+      "UnauthRoleName": "amplify-tree-prod-202259-unauthRole",
+      "StackName": "amplify-tree-prod-202259",
+      "StackId": "arn:aws:cloudformation:eu-central-1:462898676500:stack/amplify-tree-prod-202259/43df5460-fcf8-11ea-9a4e-02433c861a1c",
+      "AmplifyAppId": "dc7h6l7ajhs0r"
+    },
+    "categories": {
+      "auth": {
+        "treefbb17347": {}
+      }
+    }
+  }
+}

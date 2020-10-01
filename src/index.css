@@ -1,13 +1,210 @@
 body {
+  padding:0 ;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+html, body, #root, #root>div {
+  overflow-y: auto;
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',monospace;
+}
+
+/* Nav Section */
+
+.main-head {
+  background: #C4C4C4;
+  color: white;
+  width: 100vw;
+  height: 108px;
+  overflow: hidden;
+}
+
+nav {
+  width: 100vw;
+  display: absolute;
+  min-height: 10vh;
+  width: 100vw;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  list-style: none;
+}
+
+#login {
+  width: 18vw;
+  height: 98px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url(./assets/login.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70px;
+}
+#logout {
+  position: absolute;
+  right: 0;
+  top: 15;
+}
+#house {
+  width: 18vw;
+  height: 78px;
+  background-image: url(./assets/HouseFill.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70px;
+}
+#info {
+  width: 18vw;
+  height: 78px;
+  background-image: url(./assets/InfoCircleFill.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70px;
+  margin-left: 3vw;
+}
+#profile {
+  width: 18vw;
+  height: 78px;
+  background-image: url(./assets/FilePersonFill.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70px;
+  margin-left: 3vw;
+}
+#home {
+  position: absolute;
+  background-attachment:  fixed;  
+  background-image:url(./assets/tree.png) ,url(./assets/bg1.png) ;
+  background-repeat: no-repeat, repeat;
+  background-position: 15% 65%,25% 45%;  
+  background-size: 42vw 80vh,101vw 100vh;
+  width: 100vw;
+  height: 100%;
+  z-index: 1;
+  /* overflow: auto; */
+}
+#homet{
+  position: absolute;
+  background-attachment:  fixed;  
+  background-image:url(./assets/homet.png) ,url(./assets/bg1.png) ;
+  background-repeat: no-repeat, repeat;
+  background-position: 15% 65%,25% 45%;  
+  background-size: 42vw 80vh,101vw 100vh;
+  width: 100vw;
+  height: 100%;
+  z-index: 1;
+}
+#more {
+  width: 228px;
+  height: 78px;
+  background-image: url(./assets/more.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 90%;
+  cursor: pointer;
+}
+.inter{
+  z-index: 1;
+  position: absolute;
+  left: 59.82%;
+  top: 4.51vh;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.4em;
+  line-height: 57px;
+  color: #413D3A;
+}
+
+@media screen and (max-height :550px) {
+  #home {
+    background-size: 42vw 430px,101vw 100vh;
+  }
+}
+@media screen and (min-width: 600px) {
+  #login  {   
+  width: 10vmin;
+  }
+  #profile  {   
+  width: 10vmin;
+  }
+  #info  {   
+  width: 10vmin;
+  }
+  #house  {   
+  width: 10vmin;
+  }
+  
+}
+@media screen and (max-width: 1024px) {
+  #more {
+    width: 158px;
+    position: absolute;
+   right: 10%; 
+  }
+
+  .inter{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6em;
+    line-height: 27px;
+    color: #413D3A;
+  }
+  #home {
+    
+    background-position: 15% 35%,25% 45%;  
+    background-size: 369px 359px,101vw 100vh;
+    width: 100vw;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 510px) {
+  .inter{
+    left: 42.82%;
+  }
+}
+@media screen and (max-width: 825px) and (max-height:450px) and (orientation: landscape){
+  #home {
+    position: absolute;
+    background-attachment:  fixed;  
+    background-image:url(./assets/tree.png) ,url(./assets/bg1.png) ;
+    background-repeat: no-repeat, repeat;
+    background-position: 15% 65%,25% 45%;  
+    background-size: 269px 259px,101vw 100vh;
+    width: 100vw;
+    height: 100%;
+    z-index: 1;
+    /* overflow: auto; */
+  }
+  .inter{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4em;
+    line-height: 27px;
+    color: #413D3A;
+  }
+}
+@media screen and (min-width: 600px) and (max-height:450px) and (orientation: landscape) {
+  #login  {   
+  width: 38vmin;
+  }
+  #profile  {   
+  width: 38vmin;
+  }
+  #info  {   
+  width: 38vmin;
+  }
+  #house  {   
+  width: 38vmin;
+  }
 }
